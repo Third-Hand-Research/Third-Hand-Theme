@@ -10,8 +10,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
-?>
+$container = get_theme_mod( 'understrap_container_type' ); ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
@@ -27,6 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
+						<img class="logo" src="/wp-content/themes/third-hand/img/ecal_logo.svg" alt="logo" />
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->

@@ -128,40 +128,12 @@ function create_posttype_end_effectors() {
 add_action( 'init', 'create_posttype_end_effectors' );
 
 
-
-// End of arm tools custom post type function
-function create_posttype_references() {
-
-    register_post_type( 'references',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Reference Projects' ),
-                'singular_name' => __( 'Reference Projects' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-			'menu_icon' => 'dashicons-admin-site',
-			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
-			'hierarchical'        => false,
-			'public'              => true,
-			'show_ui'             => true,
-			'show_in_menu'        => true,
-			'show_in_nav_menus'   => true,
-			'show_in_admin_bar'   => true,
-			'menu_position'       => 4,
-			'can_export'          => true,
-			'has_archive'         => true,
-			'exclude_from_search' => false,
-			'publicly_queryable'  => true,
-			'capability_type'     => 'post',
-			'show_in_rest' => true
-
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype_references' );
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	$mimes['stl'] = 'application/sla';
+	return $mimes;
+  }
+  add_filter('upload_mimes', 'cc_mime_types');
 
 
 add_action('acf/init', 'car_acf_references_block');

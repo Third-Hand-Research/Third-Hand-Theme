@@ -25,6 +25,39 @@ a {
   margin-bottom: 1em;
 }
 
+#main-nav {  
+  .dropdown-menu {
+    border: none;
+  }
+
+  .offcanvas-end {
+    width: 50vw;
+  }
+ 
+  .offcanvas-body {
+    font-size: 1.640625rem;
+
+    .dropdown-item {
+      color: $primary;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.offcanvas-backdrop {
+  background-color: $primary;
+
+  &.show {
+    opacity: .9;
+  }
+}
+
+button {
+  box-shadow: none !important;
+}
 
 @include media-breakpoint-up(md) {
 
@@ -360,5 +393,118 @@ li.end-effectors {
       #controls {
           display: none;
       }
+  }
+}
+
+.dg.ac {
+  display: none;
+}
+
+#page-wrapper {
+  padding-bottom: 1em;
+}
+
+#wrapper-footer {
+  padding: 2em 0;
+  margin-top: 2em;
+
+  .site-info {
+    text-align: center;
+    .logo {
+      max-width: 120px;
+      height: auto;
+    }
+    .address {
+      font-size: 1em;
+    }
+  }
+}
+
+.page-template-page-landingpage {
+
+  #keyvisual {
+    width: 100vw;
+    height: 100vh;
+    background-color: $purple;
+    position: relative;
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      touch-action: pan-y !important;
+    }
+
+    .visual-text {
+      //font-size: 43vh;
+      //line-height: 36vh;
+      font-size: 38vh; 
+      line-height: 30vh;
+      padding: 20vh 5vw 5vh 5vw;
+      text-align: center;
+      color: $white;
+
+      @media (max-width: 900px) {
+          font-size: 31vw;
+          line-height: 27vw;
+          padding: 30vh 2rem 2rem 2rem;
+      }
+    }
+  }
+
+  h1, h2, h3 {
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.2em;
+    margin-bottom: 2em;
+    @media (max-width: 900px) {
+        font-size: 2em
+    }
+  }
+
+  h2 {
+    font-size: 2.6em;
+    @media (max-width: 900px) {
+        font-size: 1.4em
+    }
+  }
+
+  p {
+    @media (max-width: 900px) {
+      font-size:   1.125rem;
+    }
+  }
+
+  #wrapper-navbar,
+  #main-menu,
+  .navbar-toggler {
+    display: none;
+  }
+
+  .landingpage-content {
+    max-width: 980px;
+    padding: 1em;
+    margin: auto;
+  }
+}
+
+.page-template-page-references {
+
+  h1 {
+    max-width: 980px;
+    margin: auto;
+  }
+
+  .content-area {
+    max-width: 100vw;
+  }
+
+  .projects.container {
+    max-width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

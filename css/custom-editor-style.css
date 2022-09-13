@@ -41,7 +41,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #5533ff;
+  color: #6233fa;
 }
 
 h1, .h1 {
@@ -181,11 +181,11 @@ sup {
 }
 
 a {
-  color: #5533ff;
+  color: #6233fa;
   text-decoration: underline;
 }
 a:hover {
-  color: #4429cc;
+  color: #4e29c8;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -436,7 +436,7 @@ progress {
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
-  --bs-purple: #5533ff;
+  --bs-purple: #6233fa;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -456,7 +456,7 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #5533ff;
+  --bs-primary: #6233fa;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -464,7 +464,7 @@ progress {
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 85, 51, 255;
+  --bs-primary-rgb: 98, 51, 250;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -474,7 +474,7 @@ progress {
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 85, 51, 255;
+  --bs-body-color-rgb: 98, 51, 250;
   --bs-body-bg-rgb: 254, 254, 254;
   --bs-font-sans-serif: "MaxiRoundMonoLight";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -483,22 +483,22 @@ progress {
   --bs-body-font-size: 1.3125rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #5533ff;
+  --bs-body-color: #6233fa;
   --bs-body-bg: #fefefe;
 }
 
 .table, .wp-block-table table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #5533ff;
+  --bs-table-striped-color: #6233fa;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #5533ff;
+  --bs-table-active-color: #6233fa;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #5533ff;
+  --bs-table-hover-color: #6233fa;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1.5rem;
-  color: #5533ff;
+  color: #6233fa;
   vertical-align: top;
   border-color: #dee2e6;
 }
@@ -553,15 +553,15 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #ddd6ff;
-  --bs-table-striped-bg: #d2cbf2;
+  --bs-table-bg: #e0d6fe;
+  --bs-table-striped-bg: #d5cbf1;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #c7c1e6;
+  --bs-table-active-bg: #cac1e5;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ccc6ec;
+  --bs-table-hover-bg: #cfc6eb;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #c7c1e6;
+  border-color: #cac1e5;
 }
 
 .table-secondary {
@@ -854,12 +854,12 @@ progress {
 
 .has-purple-color,
 .has-purple-color:visited {
-  color: #5533ff;
+  color: #6233fa;
 }
 
 .has-purple-background-color {
-  background-color: #5533ff;
-  border-color: #5533ff;
+  background-color: #6233fa;
+  border-color: #6233fa;
 }
 
 .has-pink-color,
@@ -964,12 +964,12 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #5533ff;
+  color: #6233fa;
 }
 
 .has-primary-background-color {
-  background-color: #5533ff;
-  border-color: #5533ff;
+  background-color: #6233fa;
+  border-color: #6233fa;
 }
 
 .has-secondary-color,
