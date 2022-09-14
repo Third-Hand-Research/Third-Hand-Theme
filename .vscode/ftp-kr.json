@@ -1,0 +1,16 @@
+{
+    "host": "epka.ftp.infomaniak.com",
+    "username": "epka_martin",
+    "password": "QAk6hA1_yS1",
+    "remotePath": "sites/third-hand.ecal-mid.ch/wp-content/themes/third-hand/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

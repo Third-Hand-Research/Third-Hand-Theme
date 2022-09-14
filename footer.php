@@ -25,8 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' ); ?>
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-
-						<img class="logo" src="/wp-content/themes/third-hand/img/ecal_logo.svg" alt="logo" />
+						<a href="https://www.ecal.ch/" target="_blank"><img class="logo" src="/wp-content/themes/third-hand/img/ecal_logo.svg" alt="logo" /></a>
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->

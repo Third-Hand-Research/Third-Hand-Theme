@@ -28,25 +28,40 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				}
 				?>
-            
 
-            <?php if( have_rows('projects') ): ?>
-                <div class="projects container">
+                <?php
+                // get repeater field data
+                $repeater = get_field('projects');
+
+                // vars
+                $order = array();
+
+                // populate order
+                foreach( $repeater as $i => $row ) {
+                    $order[ $i ] = $row['year'];
+                }
+
+                // multisort
+                array_multisort( $order, SORT_DESC, $repeater );
+
+                // loop through repeater
+                if( $repeater ): ?>
+                    
+                <div class="projects container mt-3">
                     <div class="row">
-                        <?php while( have_rows('projects') ): the_row(); 
-                            $image = get_sub_field('image');
-                            $link = get_sub_field('link');
-                            ?>
-                            <div class="col-12 col-md-4">
-                                <a href="<?php print_r($link); ?>" ><?php echo wp_get_attachment_image( $image, 'large' ); ?></a>
-                                <div class="title mt-2 mb-5"><?php the_sub_field('artist_name'); ?> <br> <?php the_sub_field('title'); ?> (<?php the_sub_field('year'); ?>)<br>
-                                <span class="badge rounded-pill bg-primary"><?php the_sub_field('category'); ?></span></div>
-                            </div>
-
-                        <?php endwhile; ?>
+                    <?php foreach( $repeater as $i => $row ): 
+                            $image = $row['image'];
+                            $link = $row['link'];
+                        ?>
+                        <div class="col-12 col-md-4">
+                            <a href="<?php print_r($link); ?>" ><?php echo wp_get_attachment_image( $image, 'large' ); ?></a>
+                            <div class="title mt-2 mb-5"><?php echo $row['artist_name']; ?> <br> <?php echo $row['title']; ?> (<?php echo $row['year']; ?>)<br>
+                            <span class="badge rounded-pill bg-primary"><?php echo $row['category']; ?></span></div>
+                        </div>
+                    <?php endforeach; ?>
                     </div>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
 
 			</main><!-- #main -->
 
